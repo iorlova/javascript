@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lan="en">
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <script src="solution.js"> </script>
+        <script src="solution_1.js"> </script>
         <title>JS</title>
     </head>
     <body>
         <p>ax<sup>2</sup>+bx+c=0</p>
-        <form action="solution.js" method="post">
+        <form action="javascript:problem()">
             <label>Input a</label>
-                <input id="a" type="number" recquired>
+                <input onkeydown="problem()" id="a" type="text" required>
             <br>
             <label>Input b</label> 
-                <input id="b" type="number" recquired>
+                <input onkeydown="problem()" id="b" type="text" required>
             <br>
             <label>Input c</label> 
-                <input id="c" type="number" recquired>
+                <input onkeydown="problem()" id="c" type="text" required>
             <br>
-            <input type="button" onclick="problem()" value="Get solution">
         </form>
+        <div id="result"></div
         <br>
         <br>
     </body>

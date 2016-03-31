@@ -1,4 +1,3 @@
-
 function problem(){
     var a = document.getElementById("a").value;
     var b = document.getElementById("b").value;
@@ -6,11 +5,11 @@ function problem(){
     var d = (b * b - 4 * a * c);
     if (d<0) 
     {
-        result.innerHTML="no solution";
+       alert("no solution");
     } 
     else if (d==0)
     {
-        result.innerHTML="x="(-b/2*a);
+       alert("x="+(-b/2*a));
     }
     else
     {
